@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153019E9256E6F8A0043A1EA /* newExperimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153019E8256E6F8A0043A1EA /* newExperimento.swift */; };
 		2D2E5DCF256D98D400B9F7BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */; };
 		2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD0256D98D400B9F7BB /* ViewController.swift */; };
 		2D2E5DD4256D98D400B9F7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD2256D98D400B9F7BB /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153019E8256E6F8A0043A1EA /* newExperimento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newExperimento.swift; sourceTree = "<group>"; };
 		2D2E5DCB256D98D400B9F7BB /* dVehiculos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dVehiculos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D2E5DD0256D98D400B9F7BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		2D2E5DCD256D98D400B9F7BB /* dVehiculos */ = {
 			isa = PBXGroup;
 			children = (
+				153019E8256E6F8A0043A1EA /* newExperimento.swift */,
 				2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */,
 				2D2E5DD0256D98D400B9F7BB /* ViewController.swift */,
 				2D2E5DD2256D98D400B9F7BB /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2E5DD7256D98D400B9F7BB /* dVehiculos.xcdatamodeld in Sources */,
+				153019E9256E6F8A0043A1EA /* newExperimento.swift in Sources */,
 				2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */,
 				2D2E5DCF256D98D400B9F7BB /* AppDelegate.swift in Sources */,
 			);
