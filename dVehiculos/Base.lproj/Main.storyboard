@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nuevo experimento-->
+        <!--Nuevo experimentos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="newExperimento" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
@@ -393,7 +393,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nuevo experimento" id="r6g-gD-rJ4">
+                    <navigationItem key="navigationItem" title="Nuevo experimentos" id="r6g-gD-rJ4">
                         <barButtonItem key="leftBarButtonItem" title="Volver" style="done" id="TSI-Sq-ZIi">
                             <color key="tintColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                         </barButtonItem>
