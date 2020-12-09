@@ -139,9 +139,10 @@ class ExperimentoTableViewController: UITableViewController {
                                               for: indexPath) as! ExperimentoTableViewCell
             /*cell.textLabel?.text =
              person.value(forKeyPath: "nombre") as? String*/
-            cell.labelExperimento.text = person.value(forKeyPath: "clase") as? String
+            cell.labelExperimento.text = "Experimento 1"
             cell.labelNombre.text = person.value(forKeyPath: "clase") as? String
-            cell.labelFecha.text = person.value(forKeyPath: "clase") as? String
+            //cell.labelFecha.text = person.value(forKeyPath: "clase") as? String
+            cell.labelFecha.text = "09/12/2020"
             cell.imageExperimento.image = UIImage(named:"opel1")
             
             cell.accessoryType = .disclosureIndicator
@@ -177,6 +178,10 @@ class ExperimentoTableViewController: UITableViewController {
         } catch let error as NSError {
             print("No se pudo guardar. \(error), \(error.userInfo)")
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Borrar"
     }
     
 }
