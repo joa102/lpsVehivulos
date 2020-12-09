@@ -468,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jho-Qp-y2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="52"/>
+            <point key="canvasLocation" x="664" y="-5"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="jFH-bV-dY8">
@@ -486,10 +486,6 @@
                                 <rect key="frame" x="0.0" y="244" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="eLa-Wa-Hn4">
-                                        <rect key="frame" x="40" y="45" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombreUsuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7gi-YW-beO">
                                         <rect key="frame" x="142" y="45" width="131" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -497,14 +493,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8Td-8C-y4d">
-                                        <rect key="frame" x="314" y="45" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="3gJ-Vg-3eg" appends="YES" id="2K7-WH-ABs"/>
-                                        </connections>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usuario@correo.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niT-jt-7QA">
                                         <rect key="frame" x="123" y="83" width="168" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -512,23 +500,52 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usuarioGenerico" id="eLa-Wa-Hn4">
+                                        <rect key="frame" x="25" y="30" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logOut" id="8Td-8C-y4d">
+                                        <rect key="frame" x="312" y="50" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carreteraUAL" id="iqH-jn-Nhd">
-                                <rect key="frame" x="0.0" y="718" width="414" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" id="bGW-Hb-ywK">
                                 <rect key="frame" x="0.0" y="574" width="414" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verHistorial" id="OcY-sM-lCg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xkE-FL-cFg" appends="YES" id="5qN-0h-S7Z"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="ag9-Cy-DDc">
                                 <rect key="frame" x="0.0" y="384" width="414" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuevoExperimento" id="uJr-Kj-pIb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XQd-ig-QzX" appends="YES" id="0KC-5a-4NE"/>
+                                </connections>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carreteraUAL" id="iqH-jn-Nhd">
+                                <rect key="frame" x="0.0" y="724" width="414" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -539,9 +556,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4e-Nk-sPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="3gJ-Vg-3eg"/>
+                <tapGestureRecognizer id="XQd-ig-QzX">
+                    <connections>
+                        <segue destination="TVb-9G-mSq" kind="modal" id="2y1-xG-IR9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xkE-FL-cFg"/>
             </objects>
-            <point key="canvasLocation" x="-142.02898550724638" y="-622.09821428571422"/>
+            <point key="canvasLocation" x="-107" y="-230"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="HPT-Pf-pew">
@@ -903,6 +925,10 @@
         <image name="Saab" width="600" height="600"/>
         <image name="carreteraUAL" width="513" height="347"/>
         <image name="furgo" width="1200" height="1200"/>
+        <image name="logOut" width="256" height="256"/>
         <image name="logo" width="513" height="347"/>
+        <image name="nuevoExperimento" width="249" height="116"/>
+        <image name="usuarioGenerico" width="490" height="490"/>
+        <image name="verHistorial" width="248" height="117"/>
     </resources>
 </document>
