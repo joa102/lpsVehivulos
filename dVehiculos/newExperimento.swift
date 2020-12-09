@@ -13,13 +13,63 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //Conexiones
     @IBOutlet weak var numeros: UIPickerView!
-
-    @IBOutlet weak var var1: UILabel!
+    @IBAction func Boton1(_ sender: Any) {
+    }
+    
+    @IBAction func Boton2(_ sender: Any) {
+    }
+    @IBAction func Boton3(_ sender: Any) {
+    }
+    
+    @IBAction func Boton4(_ sender: Any) {
+    }
+    @IBAction func Boton5(_ sender: Any) {
+    }
+    @IBAction func Boton6(_ sender: Any) {
+    }
+    @IBAction func Boton7(_ sender: Any) {
+    }
+    @IBAction func Boton8(_ sender: Any) {
+    }
+    @IBAction func Boton9(_ sender: Any) {
+    }
+    @IBAction func Boton10(_ sender: Any) {
+    }
+    @IBAction func Boton11(_ sender: Any) {
+    }
+    @IBAction func Boton12(_ sender: Any) {
+    }
+    @IBAction func Boton13(_ sender: Any) {
+    }
+    @IBAction func Boton14(_ sender: Any) {
+    }
+    
+    @IBAction func Boton15(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //Variables
     var valornumeros:[[String]] = [[String]]()
     var v1 :String = "0"
     var v2 :String = "0"
     var v3 :String = "0"
+    var valor: String = "000"
+    var num1 = 0, num2 = 0, num3 = 0 , num4 = 0, num5 = 0,
+        num6 = 0, num7 = 0, num8 = 0 , num9 = 0, num10 = 0,
+        num11 = 0, num12 = 0, num13 = 0 , num14 = 0, num15 = 0;
+    
     
     //Constructor inicial
     override func viewDidLoad() {
@@ -29,7 +79,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func actualizarValor(){
-        var1.text = v1+v2+v3
+        //var.text = v1+v2+v3
     }
     
     func selectorNumeros(){
@@ -59,9 +109,6 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        
-        
         if (component == 0) {
             v1 = valornumeros[component][row] as String
         }
