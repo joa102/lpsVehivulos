@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="TVb-9G-mSq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="FBo-Ai-SwI">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,14 +30,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="var1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mIT-9L-SxX">
-                                                        <rect key="frame" x="-0.5" y="7" width="33" height="21.5"/>
+                                                        <rect key="frame" x="0.0" y="7.5" width="33" height="21.5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="IQP-av-vcu">
-                                                        <rect key="frame" x="262.5" y="0.0" width="55" height="36"/>
+                                                        <rect key="frame" x="263" y="0.0" width="55" height="36"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.79357023979999997" green="0.79357023979999997" blue="0.79357023979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
@@ -440,12 +440,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numeros" destination="hW9-RY-yoM" id="xHd-2e-tZH"/>
-                        <outlet property="var1" destination="mIT-9L-SxX" id="gpH-92-jmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="52"/>
+            <point key="canvasLocation" x="1275" y="-954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kU7-cv-V35">
@@ -469,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jho-Qp-y2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="52"/>
+            <point key="canvasLocation" x="1274" y="-1760"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="jFH-bV-dY8">
@@ -564,7 +563,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="xkE-FL-cFg"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="56"/>
+            <point key="canvasLocation" x="229" y="-954"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="HPT-Pf-pew">
@@ -599,7 +598,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uB-0R-P3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767.96999999999991" y="-952.74666666666667"/>
+            <point key="canvasLocation" x="3162" y="-954"/>
         </scene>
         <!--Informacion-->
         <scene sceneID="d8p-JI-bya">
@@ -737,7 +736,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JA-ls-x2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2640.579710144928" y="-820.3125"/>
+            <point key="canvasLocation" x="4138" y="-954"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="REA-RA-FQS">
@@ -824,7 +823,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akk-GH-2H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="52"/>
+            <point key="canvasLocation" x="-830" y="-954"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZuJ-0U-Cqx">
@@ -898,7 +897,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYA-5q-Pbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937.68115942029" y="55.580357142857139"/>
+            <point key="canvasLocation" x="-1835" y="-954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xIS-VL-s5A">
@@ -917,7 +916,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJH-Sl-7md" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="-819"/>
+            <point key="canvasLocation" x="4138" y="-1738"/>
         </scene>
         <!--Experimento Table View Controller-->
         <scene sceneID="0da-f7-0y7">
@@ -995,7 +994,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he4-Fj-zUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1142" y="-953"/>
+            <point key="canvasLocation" x="2287" y="-954"/>
         </scene>
     </scenes>
     <resources>
