@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Opel.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "coche desconocido.png",
       "scale" : "2x"
     },
     {
