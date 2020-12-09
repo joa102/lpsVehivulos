@@ -30,14 +30,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="var1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mIT-9L-SxX">
-                                                        <rect key="frame" x="0.0" y="7.5" width="33" height="21.5"/>
+                                                        <rect key="frame" x="-0.5" y="7" width="33" height="21.5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="IQP-av-vcu">
-                                                        <rect key="frame" x="263" y="0.0" width="55" height="36"/>
+                                                        <rect key="frame" x="262.5" y="0.0" width="55" height="36"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" red="0.79357023979999997" green="0.79357023979999997" blue="0.79357023979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
@@ -440,6 +440,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numeros" destination="hW9-RY-yoM" id="xHd-2e-tZH"/>
+                        <outlet property="var1" destination="mIT-9L-SxX" id="gpH-92-jmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -468,7 +469,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jho-Qp-y2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-5"/>
+            <point key="canvasLocation" x="668" y="52"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="jFH-bV-dY8">
@@ -563,7 +564,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="xkE-FL-cFg"/>
             </objects>
-            <point key="canvasLocation" x="-107" y="-230"/>
+            <point key="canvasLocation" x="-64" y="56"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="HPT-Pf-pew">
