@@ -25,6 +25,7 @@ extension Vehiculo {
     @NSManaged public var relacionAspectoEje: Int32
     @NSManaged public var aspectoLongitudMaxima: Int32
     @NSManaged public var elongacion: Int32
+    @NSManaged public var fecha: Date?
     @NSManaged public var rectangularidadEje: Int32
     @NSManaged public var longitudMaximaRectangularidad: Int32
     @NSManaged public var variacionEscalonadaEjeMayor: Int32
