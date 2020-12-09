@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		153019E9256E6F8A0043A1EA /* newExperimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153019E8256E6F8A0043A1EA /* newExperimento.swift */; };
+		2916CF4225791B4A002BD021 /* InformacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916CF4125791B4A002BD021 /* InformacionViewController.swift */; };
+		2916CF4425791B5D002BD021 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2916CF4325791B5D002BD021 /* InicioViewController.swift */; };
+		2969B1F32580F9BF00B09F7C /* Persona+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969B1EF2580F9BF00B09F7C /* Persona+CoreDataClass.swift */; };
+		2969B1F42580F9BF00B09F7C /* Persona+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969B1F02580F9BF00B09F7C /* Persona+CoreDataProperties.swift */; };
+		2969B1F52580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969B1F12580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift */; };
+		2969B1F62580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969B1F22580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift */; };
 		2D2E5DCF256D98D400B9F7BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */; };
 		2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD0256D98D400B9F7BB /* ViewController.swift */; };
 		2D2E5DD4256D98D400B9F7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD2256D98D400B9F7BB /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		153019E8256E6F8A0043A1EA /* newExperimento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newExperimento.swift; sourceTree = "<group>"; };
+		2916CF4125791B4A002BD021 /* InformacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionViewController.swift; sourceTree = "<group>"; };
+		2916CF4325791B5D002BD021 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		2969B1EF2580F9BF00B09F7C /* Persona+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persona+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2969B1F02580F9BF00B09F7C /* Persona+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Persona+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2969B1F12580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehiculo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2969B1F22580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehiculo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2D2E5DCB256D98D400B9F7BB /* dVehiculos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dVehiculos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D2E5DD0256D98D400B9F7BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,10 @@
 		2D2E5DCD256D98D400B9F7BB /* dVehiculos */ = {
 			isa = PBXGroup;
 			children = (
+				2969B1EF2580F9BF00B09F7C /* Persona+CoreDataClass.swift */,
+				2969B1F02580F9BF00B09F7C /* Persona+CoreDataProperties.swift */,
+				2969B1F12580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift */,
+				2969B1F22580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift */,
 				153019E8256E6F8A0043A1EA /* newExperimento.swift */,
 				2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */,
 				2D2E5DD0256D98D400B9F7BB /* ViewController.swift */,
@@ -66,6 +82,8 @@
 				2D2E5DDA256D98D600B9F7BB /* LaunchScreen.storyboard */,
 				2D2E5DDD256D98D600B9F7BB /* Info.plist */,
 				2D2E5DD5256D98D400B9F7BB /* dVehiculos.xcdatamodeld */,
+				2916CF4125791B4A002BD021 /* InformacionViewController.swift */,
+				2916CF4325791B5D002BD021 /* InicioViewController.swift */,
 			);
 			path = dVehiculos;
 			sourceTree = "<group>";
@@ -142,8 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2E5DD7256D98D400B9F7BB /* dVehiculos.xcdatamodeld in Sources */,
+				2916CF4425791B5D002BD021 /* InicioViewController.swift in Sources */,
 				153019E9256E6F8A0043A1EA /* newExperimento.swift in Sources */,
+				2916CF4225791B4A002BD021 /* InformacionViewController.swift in Sources */,
+				2969B1F42580F9BF00B09F7C /* Persona+CoreDataProperties.swift in Sources */,
+				2969B1F52580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift in Sources */,
+				2969B1F32580F9BF00B09F7C /* Persona+CoreDataClass.swift in Sources */,
 				2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */,
+				2969B1F62580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift in Sources */,
 				2D2E5DCF256D98D400B9F7BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
