@@ -919,17 +919,96 @@
             </objects>
             <point key="canvasLocation" x="1681" y="-819"/>
         </scene>
+        <!--Experimento Table View Controller-->
+        <scene sceneID="0da-f7-0y7">
+            <objects>
+                <tableViewController id="cgU-zh-Tre" userLabel="Experimento Table View Controller" customClass="ExperimentoTableViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="P9o-7a-eC6" userLabel="Experimento Table View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="UPX-l1-1qT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <items>
+                                <navigationItem title="Historial" id="4IP-of-46R">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="reply" id="X7h-aq-jok">
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uzy-Fx-gon">
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="addExperimento:" destination="cgU-zh-Tre" id="fIJ-hx-T3N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Table View Cell Experimentos" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExperimentoTableViewCell" rowHeight="90" id="o7H-ut-knP" userLabel="ExperimentoCell" customClass="ExperimentoTableViewCell" customModule="dVehiculos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="contentViewExperimento" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o7H-ut-knP" id="sGk-8z-4Ir">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vehiculoDesconocido" id="aJS-SE-wf4">
+                                            <rect key="frame" x="20" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zpw-un-a21">
+                                            <rect key="frame" x="126" y="34" width="268" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tAV-Aj-FE7">
+                                            <rect key="frame" x="126" y="58" width="268" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uSs-4Z-2js">
+                                            <rect key="frame" x="126" y="11" width="268" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageExperimento" destination="aJS-SE-wf4" id="qUH-vb-JYZ"/>
+                                    <outlet property="labelExperimento" destination="uSs-4Z-2js" id="dWs-1h-ZSY"/>
+                                    <outlet property="labelFecha" destination="tAV-Aj-FE7" id="Qkq-5P-D1B"/>
+                                    <outlet property="labelNombre" destination="Zpw-un-a21" id="tHE-j5-1Wo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableViewExperimento" destination="P9o-7a-eC6" id="AH4-CW-W6A"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="he4-Fj-zUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514.49275362318849" y="-953.57142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Autobus" width="600" height="600"/>
         <image name="Opel" width="600" height="600"/>
         <image name="Saab" width="600" height="600"/>
-        <image name="carreteraUAL" width="513" height="347"/>
+        <image name="carreteraUAL" width="1026" height="695"/>
         <image name="furgo" width="1200" height="1200"/>
-        <image name="logOut" width="256" height="256"/>
-        <image name="logo" width="513" height="347"/>
-        <image name="nuevoExperimento" width="249" height="116"/>
-        <image name="usuarioGenerico" width="490" height="490"/>
-        <image name="verHistorial" width="248" height="117"/>
+        <image name="logOut" width="237.83226013183594" height="237.83226013183594"/>
+        <image name="logo" width="1026" height="695"/>
+        <image name="nuevoExperimento" width="498" height="233"/>
+        <image name="usuarioGenerico" width="980" height="980"/>
+        <image name="vehiculoDesconocido" width="1828" height="954"/>
+        <image name="verHistorial" width="497" height="234"/>
     </resources>
 </document>

@@ -21,6 +21,7 @@ extension Persona {
     @NSManaged public var email: String?
     @NSManaged public var imagen_perfil: NSData?
     @NSManaged public var experimentos: NSSet?
+    @NSManaged public var password: String?
 
 }
 
