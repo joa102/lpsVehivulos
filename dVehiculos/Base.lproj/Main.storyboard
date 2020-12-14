@@ -492,11 +492,15 @@
                     <navigationItem key="navigationItem" title="Nuevo experimentos" id="r6g-gD-rJ4">
                         <barButtonItem key="leftBarButtonItem" title="Volver" style="done" id="TSI-Sq-ZIi">
                             <color key="tintColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <segue destination="pu3-Jx-aAv" kind="unwind" unwindAction="unwrapSegueNuevoExperimento:" id="zgc-Cv-sCp"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="MhR-Gt-XCB">
                             <color key="tintColor" red="0.080589554494805093" green="1" blue="0.33058830444426135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="saveVehiculo:" destination="BYZ-38-t0r" id="gZL-Tz-sPd"/>
+                                <segue destination="tHb-0V-bbx" kind="modal" id="T1r-fc-42S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -522,8 +526,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="pu3-Jx-aAv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1273.913043478261" y="-954.24107142857133"/>
+            <point key="canvasLocation" x="1274" y="-954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kU7-cv-V35">
@@ -590,6 +595,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gac-Tq-L6H" appends="YES" id="Ndl-m0-bYQ"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="bGW-Hb-ywK">
                                 <rect key="frame" x="0.0" y="574" width="414" height="190"/>
@@ -640,9 +649,18 @@
                         <segue destination="TVb-9G-mSq" kind="modal" id="2y1-xG-IR9"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="xkE-FL-cFg"/>
+                <tapGestureRecognizer id="xkE-FL-cFg">
+                    <connections>
+                        <segue destination="tHb-0V-bbx" kind="modal" id="R8a-cJ-gof"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gac-Tq-L6H">
+                    <connections>
+                        <segue destination="FBo-Ai-SwI" kind="modal" id="HWx-pE-bWt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="229" y="-954"/>
+            <point key="canvasLocation" x="90" y="-954"/>
         </scene>
         <!--Informacion-->
         <scene sceneID="d8p-JI-bya">
@@ -775,17 +793,21 @@
                     <navigationItem key="navigationItem" title="Informacion" id="gkk-Qi-cIT">
                         <barButtonItem key="leftBarButtonItem" title="Volver" id="oLg-D1-Zji">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="XXR-7y-aGp" kind="unwind" unwindAction="unwrapInformacion:" id="E9U-gD-XOJ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JA-ls-x2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XXR-7y-aGp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4587" y="-954"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrarse View Controller-->
         <scene sceneID="REA-RA-FQS">
             <objects>
-                <viewController id="sWy-wo-T1H" sceneMemberID="viewController">
+                <viewController id="sWy-wo-T1H" customClass="RegistrarseViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iUQ-2d-bze">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -802,6 +824,9 @@
                                 <state key="normal" title="Iniciar Sesión">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FBo-Ai-SwI" kind="modal" id="EuW-YH-VcP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8tF-NQ-OAy">
                                 <rect key="frame" x="194" y="260" width="173" height="56"/>
@@ -864,15 +889,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7v7-6g-AT7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akk-GH-2H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-794" y="-954"/>
         </scene>
-        <!--View Controller-->
+        <!--Iniciar Sesion View Controller-->
         <scene sceneID="ZuJ-0U-Cqx">
             <objects>
-                <viewController id="FBo-Ai-SwI" sceneMemberID="viewController">
+                <viewController id="FBo-Ai-SwI" customClass="IniciarSesionViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBS-en-fyd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -898,6 +924,9 @@
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sWy-wo-T1H" kind="modal" id="Lv4-wB-k1z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iML-GY-5se">
                                 <rect key="frame" x="368" y="260" width="46" height="56"/>
@@ -906,6 +935,9 @@
                                 <state key="normal" title="Info">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kJa-Tk-8sN" kind="modal" id="nD8-bj-Tpq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Usuario" minimumFontSize="24" id="CMn-t0-nG3">
                                 <rect key="frame" x="47" y="337" width="341" height="45"/>
@@ -941,30 +973,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYA-5q-Pbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1835" y="-954"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xIS-VL-s5A">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9nj-8B-52y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gDt-48-4N4">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.57761800289999998" green="0.21700671320000001" blue="0.99966567750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="GOC-lj-FJz" kind="relationship" relationship="rootViewController" id="LCa-Jj-1h1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oJH-Sl-7md" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4587" y="-1738"/>
+            <point key="canvasLocation" x="-1707" y="-954"/>
         </scene>
         <!--Experimento Table View Controller-->
         <scene sceneID="0da-f7-0y7">
@@ -1019,6 +1028,12 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Historial" id="gF3-vc-dCb">
+                        <barButtonItem key="leftBarButtonItem" title="Volver" style="done" id="cpC-WK-Upe">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="rtc-qG-vmn" kind="unwind" unwindAction="unwrapSegueNuevoExperimento:" id="1EP-2F-B7g"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uzy-Fx-gon">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -1031,6 +1046,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he4-Fj-zUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rtc-qG-vmn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2439.130434782609" y="-954.24107142857133"/>
         </scene>
@@ -1331,12 +1347,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detalle" id="gem-6K-BsD">
+                        <barButtonItem key="leftBarButtonItem" title="Volver" id="ji0-Hp-8eL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="NlJ-9U-vbw" kind="unwind" unwindAction="segueUnwrapHistorial:" id="OUH-hY-evJ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Info" id="Fy8-7T-QOZ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4X9-1I-p2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NlJ-9U-vbw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3524.6376811594205" y="-954.24107142857133"/>
         </scene>
@@ -1363,20 +1386,47 @@
             </objects>
             <point key="canvasLocation" x="3525" y="-1738"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yKX-9c-8qS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kJa-Tk-8sN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D2A-8x-R0v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GOC-lj-FJz" kind="relationship" relationship="rootViewController" id="UtP-Oe-jig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j37-rl-7c5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4587" y="-1738"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Autobus" width="600" height="600"/>
         <image name="Opel" width="600" height="600"/>
         <image name="Saab" width="600" height="600"/>
-        <image name="carreteraUAL" width="1026" height="695"/>
+        <image name="carreteraUAL" width="513" height="347"/>
         <image name="furgo" width="1200" height="1200"/>
-        <image name="logOut" width="237.83226013183594" height="237.83226013183594"/>
-        <image name="logo" width="1026" height="695"/>
-        <image name="nuevoExperimento" width="498" height="233"/>
-        <image name="opel0" width="1099" height="862"/>
+        <image name="logOut" width="256" height="256"/>
+        <image name="logo" width="513" height="347"/>
+        <image name="nuevoExperimento" width="249" height="116"/>
+        <image name="opel0" width="549" height="431"/>
         <image name="opel2" width="600" height="600"/>
-        <image name="usuarioGenerico" width="980" height="980"/>
-        <image name="vehiculoDesconocido" width="1828" height="954"/>
-        <image name="verHistorial" width="497" height="234"/>
+        <image name="usuarioGenerico" width="490" height="490"/>
+        <image name="vehiculoDesconocido" width="914" height="477"/>
+        <image name="verHistorial" width="248" height="117"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R8a-cJ-gof"/>
+        <segue reference="HWx-pE-bWt"/>
+    </inferredMetricsTieBreakers>
 </document>
