@@ -50,6 +50,7 @@ class RegistrarseViewController: UIViewController {
             do{
                 try self.context.save()
                 print("registro exitoso")
+                performSegue(withIdentifier: "iniciarSesion", sender: self)
             }catch{
                 print("Error registro")
             }

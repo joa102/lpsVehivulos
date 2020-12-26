@@ -53,11 +53,18 @@ class IniciarSesionViewController: UIViewController {
         }
         if(flag){
             print("Success")
+            performSegue(withIdentifier: "paginaInicio", sender: self)
         }
         else{
             print("Failed")
         }
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "paginaInicio"{
+            let destino = segue.destination as! InicioViewController
+            destino.usuarioLogeado = self.usuario
+        }
     }
     
 }

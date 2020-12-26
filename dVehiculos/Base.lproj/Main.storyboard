@@ -604,7 +604,7 @@
                                 <rect key="frame" x="0.0" y="574" width="414" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verHistorial" id="OcY-sM-lCg">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botonLista" id="OcY-sM-lCg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -619,7 +619,7 @@
                                 <rect key="frame" x="0.0" y="384" width="414" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nuevoExperimento" id="uJr-Kj-pIb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botonAdd" id="uJr-Kj-pIb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -631,7 +631,7 @@
                                 </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footerUAL" id="iqH-jn-Nhd">
-                                <rect key="frame" x="0.0" y="724" width="414" height="208"/>
+                                <rect key="frame" x="0.0" y="704" width="414" height="276"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -656,11 +656,11 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="gac-Tq-L6H">
                     <connections>
-                        <segue destination="FBo-Ai-SwI" kind="modal" id="HWx-pE-bWt"/>
+                        <segue destination="FBo-Ai-SwI" kind="modal" identifier="" id="HWx-pE-bWt"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="90" y="-954"/>
+            <point key="canvasLocation" x="89.855072463768124" y="-954.24107142857133"/>
         </scene>
         <!--Informacion-->
         <scene sceneID="d8p-JI-bya">
@@ -689,7 +689,7 @@
                                 <rect key="frame" x="0.0" y="408" width="414" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="furgo" id="lb4-DD-vp8">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="furgoneta2D" id="lb4-DD-vp8">
                                         <rect key="frame" x="23" y="29" width="110" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -723,7 +723,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Opel" id="m8H-Qv-Y1d">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOpel" id="m8H-Qv-Y1d">
                                         <rect key="frame" x="275" y="37" width="110" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -741,7 +741,7 @@
                                 <rect key="frame" x="0.0" y="728" width="414" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Autobus" id="ZlV-UX-2aQ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Autobus2D" id="ZlV-UX-2aQ">
                                         <rect key="frame" x="32" y="39" width="110" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -772,7 +772,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saab" id="Kz5-YB-Ey3">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSaab" id="Kz5-YB-Ey3">
                                         <rect key="frame" x="275" y="37" width="110" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -825,7 +825,7 @@
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FBo-Ai-SwI" kind="modal" id="EuW-YH-VcP"/>
+                                    <segue destination="FBo-Ai-SwI" kind="modal" identifier="iniciarSesion" id="EuW-YH-VcP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8tF-NQ-OAy">
@@ -902,7 +902,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akk-GH-2H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="-954"/>
+            <point key="canvasLocation" x="-884" y="-933"/>
         </scene>
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="ZuJ-0U-Cqx">
@@ -976,6 +976,7 @@
                                 </state>
                                 <connections>
                                     <action selector="iniciarSesion:" destination="FBo-Ai-SwI" eventType="touchUpInside" id="UHg-GW-wNV"/>
+                                    <segue destination="6wK-qy-ne0" kind="modal" identifier="paginaInicio" id="qMD-82-c1F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -989,7 +990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYA-5q-Pbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1707" y="-954"/>
+            <point key="canvasLocation" x="-1739" y="-925"/>
         </scene>
         <!--Experimento Table View Controller-->
         <scene sceneID="0da-f7-0y7">
@@ -1427,22 +1428,22 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Autobus" width="600" height="600"/>
-        <image name="Opel" width="600" height="600"/>
-        <image name="Saab" width="600" height="600"/>
+        <image name="Autobus2D" width="600" height="600"/>
+        <image name="botonAdd" width="376" height="175"/>
+        <image name="botonLista" width="376" height="175"/>
         <image name="footerUAL" width="1026" height="695"/>
-        <image name="furgo" width="1200" height="1200"/>
+        <image name="furgoneta2D" width="600" height="600"/>
         <image name="logOut" width="256" height="256"/>
+        <image name="logoOpel" width="300" height="300"/>
+        <image name="logoSaab" width="300" height="300"/>
         <image name="logoVehiculo" width="1026" height="695"/>
-        <image name="nuevoExperimento" width="249" height="116"/>
         <image name="opel0" width="549" height="431"/>
         <image name="opel2" width="600" height="600"/>
         <image name="usuarioGenerico" width="490" height="490"/>
         <image name="vehiculoDesconocido" width="914" height="477"/>
-        <image name="verHistorial" width="248" height="117"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R8a-cJ-gof"/>
-        <segue reference="EuW-YH-VcP"/>
+        <segue reference="HWx-pE-bWt"/>
     </inferredMetricsTieBreakers>
 </document>
