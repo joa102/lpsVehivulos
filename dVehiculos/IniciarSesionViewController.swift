@@ -10,6 +10,11 @@ import UIKit
 
 class IniciarSesionViewController: UIViewController {
 
+    @IBOutlet weak var nombreUsuario: UITextField!
+    @IBOutlet weak var contrasenaUsuario: UITextField!
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var usuarios:[Persona]?
+    var usuario:Persona?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +34,29 @@ class IniciarSesionViewController: UIViewController {
 
     @IBAction func unwrapInformacion(_ send: UIStoryboardSegue){
         
+        
+    }
+    @IBAction func iniciarSesion(_ sender: UIButton) {
+        let nombre = nombreUsuario.text
+        let contrasena = contrasenaUsuario.text
+        var flag = false
+        do{
+            self.usuarios = try context.fetch(Persona.fetchRequest())
+        }catch{}
+        self.usuarios!.forEach { user in
+            if(user.nombre == nombre){
+                if(user.password == contrasena){
+                    flag = true
+                    usuario = user
+                }
+            }
+        }
+        if(flag){
+            print("Success")
+        }
+        else{
+            print("Failed")
+        }
         
     }
     

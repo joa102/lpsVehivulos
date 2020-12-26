@@ -10,6 +10,11 @@ import UIKit
 
 class RegistrarseViewController: UIViewController {
 
+    @IBOutlet weak var nombreUsuario: UITextField!
+    @IBOutlet weak var emailUsuario: UITextField!
+    @IBOutlet weak var contrasenaUsuario: UITextField!
+    @IBOutlet weak var recontrasenaUsuario: UITextField!
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +36,26 @@ class RegistrarseViewController: UIViewController {
     @IBAction func unwrapInformacion_Registrarse(_ send: UIStoryboardSegue){
         
         
+    }
+    @IBAction func registrarse(_ sender: UIButton) {
+        let nombre = nombreUsuario.text
+        let email = emailUsuario.text
+        let contrasena = contrasenaUsuario.text
+        let recontrasena = recontrasenaUsuario.text
+        if(contrasena == recontrasena){
+            let newUsuario = Persona(context: self.context)
+            newUsuario.nombre = nombre
+            newUsuario.email = email
+            newUsuario.password = contrasena
+            do{
+                try self.context.save()
+                print("registro exitoso")
+            }catch{
+                print("Error registro")
+            }
+        }
+        else{
+            print("Contraseñas no iguales")
+        }
     }
 }
