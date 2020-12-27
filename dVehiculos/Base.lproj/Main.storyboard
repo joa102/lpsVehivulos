@@ -451,7 +451,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vehiculoDesconocido" id="QKU-fh-iK7">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCocheDesconocido" id="QKU-fh-iK7">
                                         <rect key="frame" x="87" y="20" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -584,7 +584,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usuarioGenerico" id="eLa-Wa-Hn4">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImg" id="eLa-Wa-Hn4">
                                         <rect key="frame" x="25" y="30" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1008,7 +1008,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vehiculoDesconocido" id="aJS-SE-wf4">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOpel" id="aJS-SE-wf4">
                                             <rect key="frame" x="20" y="11" width="68" height="68"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -1433,17 +1433,18 @@
         <image name="botonLista" width="376" height="175"/>
         <image name="footerUAL" width="1026" height="695"/>
         <image name="furgoneta2D" width="600" height="600"/>
-        <image name="logOut" width="256" height="256"/>
+        <image name="logOut" width="112" height="112"/>
+        <image name="logoCocheDesconocido" width="360" height="360"/>
         <image name="logoOpel" width="300" height="300"/>
         <image name="logoSaab" width="300" height="300"/>
         <image name="logoVehiculo" width="1026" height="695"/>
         <image name="opel0" width="549" height="431"/>
         <image name="opel2" width="600" height="600"/>
-        <image name="usuarioGenerico" width="490" height="490"/>
+        <image name="userImg" width="140" height="140"/>
         <image name="vehiculoDesconocido" width="914" height="477"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R8a-cJ-gof"/>
+        <segue reference="T1r-fc-42S"/>
         <segue reference="HWx-pE-bWt"/>
     </inferredMetricsTieBreakers>
 </document>

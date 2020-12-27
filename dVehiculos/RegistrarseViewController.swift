@@ -47,6 +47,7 @@ class RegistrarseViewController: UIViewController {
             newUsuario.nombre = nombre
             newUsuario.email = email
             newUsuario.password = contrasena
+            newUsuario.imagen_perfil = (UIImage(named: "userImg")?.pngData()! as! NSData)
             do{
                 try self.context.save()
                 print("registro exitoso")

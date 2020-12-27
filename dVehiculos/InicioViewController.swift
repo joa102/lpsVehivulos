@@ -33,7 +33,7 @@ class InicioViewController: UIViewController {
             nombreUsuarioInicio.text = usuarioLogeado?.nombre
             correoUsuarioInicio.text = usuarioLogeado?.email
             //Pasando de Data a UIImage
-            //ImagenUsuarioInicio.image = UIImage(data: usuarioLogeado?.imagen_perfil as! Data)
+            ImagenUsuarioInicio.image = UIImage(data: usuarioLogeado?.imagen_perfil! as! Data)
         }
         
     }
