@@ -976,7 +976,6 @@
                                 </state>
                                 <connections>
                                     <action selector="iniciarSesion:" destination="FBo-Ai-SwI" eventType="touchUpInside" id="UHg-GW-wNV"/>
-                                    <segue destination="6wK-qy-ne0" kind="modal" identifier="paginaInicio" id="qMD-82-c1F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -986,6 +985,7 @@
                     <connections>
                         <outlet property="contrasenaUsuario" destination="w0u-rO-e2P" id="xBd-Ox-hs2"/>
                         <outlet property="nombreUsuario" destination="CMn-t0-nG3" id="q4K-Jd-tUk"/>
+                        <segue destination="6wK-qy-ne0" kind="modal" identifier="paginaInicio" id="Tbf-04-fzf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYA-5q-Pbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1444,7 +1444,8 @@
         <image name="vehiculoDesconocido" width="914" height="477"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Lv4-wB-k1z"/>
         <segue reference="T1r-fc-42S"/>
-        <segue reference="HWx-pE-bWt"/>
+        <segue reference="EuW-YH-VcP"/>
     </inferredMetricsTieBreakers>
 </document>
