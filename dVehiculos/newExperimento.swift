@@ -1,6 +1,8 @@
 //
 //  newExperimento.swift
-//  dVehiculos
+//  Esta clase esta diseñada para poder añadir nuevo experimento
+//  de forma manual y automatica acompañado de la gestion del scroll,
+//  ruleta de numeros y otro estilos de diseño.
 //
 //  Created by Alberto Fuentes on 25/11/20.
 //  Copyright © 2020 Juandi. All rights reserved.
@@ -11,9 +13,28 @@ import CoreData
 
 class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    // VARIABLES
+    var vehiculos:[NSManagedObject] = []
     
-    //Conexiones
+    var valornumeros:[[String]] = [[String]]()
     
+    var v1 :String = "0", v2 :String = "0", v3 :String = "0"
+    
+    var valor: String = "000"
+    var clase: String = "Desconocido"
+    
+    var num1 = 0, num2 = 0, num3 = 0 , num4 = 0, num5 = 0,
+    num6 = 0, num7 = 0, num8 = 0 , num9 = 0, num10 = 0,
+    num11 = 0, num12 = 0, num13 = 0 , num14 = 0, num15 = 0;
+    
+    // CONSTRUCTOR INCIAL
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        selectorNumeros()
+    }
+    // CONEXIONES
+    
+    // Botones
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -29,10 +50,13 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var btn14: UIButton!
     @IBOutlet weak var btn13: UIButton!
     @IBOutlet weak var btn15: UIButton!
+    
+    // Otras conexiones
     @IBOutlet weak var logoVehiculo: UIImageView!
     @IBOutlet weak var imagenVehiculo: UIImageView!
     @IBOutlet weak var numeros: UIPickerView!
     
+    // ACCIONES
     @IBAction func Boton1(_ sender: Any) {
         num1 = Int(valor) ?? 0;
         btn1.setTitle(valor, for: .normal);
@@ -105,77 +129,76 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func Boton15(_ sender: Any) {
         num15 = Int(valor) ?? 0;
-        btn15.setTitle(valor, for: .normal);   
+        btn15.setTitle(valor, for: .normal);
     }
     
+    // Guardar al historial de experimentos
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "guardarExperimento" {
+                guardar(clase: clase, num1: num1, num2: num2, num3: num3, num4: num4, num5: num5, num6: num6, num7: num7, num8: num8, num9: num9, num10: num10, num11: num11, num12: num12, num13: num13, num14: num14, num15: num15)
+            }
+    }
+    
+    // Seleccionar tipo de Vehiculo
     @IBAction func seleccionarClase(_ sender: Any) {
+        
+        //Creacion de la alerta
         let alerta = UIAlertController(title: "Seleccionar clase",
                                        message: "Selecciona el tipo de vehiculo",
                                        preferredStyle: UIAlertController.Style.actionSheet)
         
+        //Tipo opel
         let opel = UIAlertAction(title :"Opel 4000",
                                  style: UIAlertAction.Style.default) { _ in
-                                    self.clase = "opel"
-                                    self.actualizarClase()
+                                    self.clase = "Opel 4000"
+                                    self.imagenVehiculo.image = UIImage(named:"Opel3D")
+                                    self.logoVehiculo.image = UIImage(named:"logoOpel")
                                     alerta.dismiss(animated: true, completion: nil)
         }
         
+        //Tipo saab
         let saab = UIAlertAction(title :"Saab 900",
                                  style: UIAlertAction.Style.default) { _ in
-                                    self.clase = "saab"
-                                    self.actualizarClase()
+                                    self.clase = "Saab 900"
+                                    self.imagenVehiculo.image = UIImage(named:"Saab3D")
+                                    self.logoVehiculo.image = UIImage(named:"logoSaab")
+                                    self.imagenVehiculo.reloadInputViews()
                                     alerta.dismiss(animated: true, completion: nil)
         }
         
+        //Tipo furgoneta
         let furgo = UIAlertAction(title :"Furgoneta",
                                   style: UIAlertAction.Style.default) { _ in
-                                    self.clase = "furgoneta"
-                                    self.actualizarClase()
-                                    alerta.dismiss(animated: true, completion: nil)
+                                    self.clase = "Furgoneta"
+                                    self.imagenVehiculo.image = UIImage(named:"furgoneta3D")
+                                    self.logoVehiculo.image = UIImage(named:"logoChevrolet")
+                                    alerta.dismiss(animated: false, completion: nil)
         }
         
+        //Tipo autobus
         let bus = UIAlertAction(title :"Autobus",
                                 style: UIAlertAction.Style.default) { _ in
                                     
-                                    self.clase = "bus"
-                                    self.actualizarClase()
-                                    alerta.dismiss(animated: true, completion: nil)
+                                    self.clase = "Autobus"
+                                    self.imagenVehiculo.image = UIImage(named:"Autobus3D")
+                                    self.logoVehiculo.image = UIImage(named:"logoBus")
+                                    alerta.dismiss(animated: false, completion: nil)
         }
         
+        //Cerrar
         let cerrar = UIAlertAction(title :"Cerrar",
                                    style: UIAlertAction.Style.destructive) { _ in
                                     alerta.dismiss(animated: true, completion: nil)
         }
+        
+        //Añadir atributos en la alerta
         alerta.addAction(opel)
         alerta.addAction(saab)
         alerta.addAction(furgo)
         alerta.addAction(bus)
         alerta.addAction(cerrar)
         
-        self.present(alerta, animated: true, completion: nil)
-    }
-    
-    @IBAction func saveVehiculo(_ sender: Any) {
-        guardar(clase: clase, num1: num1, num2: num2, num3: num3, num4: num4, num5: num5, num6: num6, num7: num7, num8: num8, num9: num9, num10: num10, num11: num11, num12: num12, num13: num13, num14: num14, num15: num15)
-    }
-    
-    //Variables
-    var vehiculos:[NSManagedObject] = []
-    var valornumeros:[[String]] = [[String]]()
-    var v1 :String = "0"
-    var v2 :String = "0"
-    var v3 :String = "0"
-    var valor: String = "000"
-    var clase: String = "Desconocido"
-    var num1 = 0, num2 = 0, num3 = 0 , num4 = 0, num5 = 0,
-        num6 = 0, num7 = 0, num8 = 0 , num9 = 0, num10 = 0,
-        num11 = 0, num12 = 0, num13 = 0 , num14 = 0, num15 = 0;
-    
-    
-    //Constructor inicial
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        selectorNumeros()
+        self.present(alerta, animated: false, completion: nil)
     }
     
     //GUARDAR VALOR EN COREDATA
@@ -205,39 +228,11 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         vehiculo.setValue(num15, forKeyPath: "curtosisEjeMayor")
         vehiculo.setValue(Date(), forKeyPath: "fecha")
         
-        
         do {
             try managedContext.save()
             vehiculos.append(vehiculo)
         } catch let error as NSError {
-            print("Ha ocurrido un error \(error), \(error.userInfo)")
-        }
-    }
-
-    
-    func actualizarClase(){
-        
-        switch clase {
-            case "opel":
-                imagenVehiculo.image = UIImage(named:"Opel2")
-                logoVehiculo.image = UIImage(named:"opel0")
-                break
-            case "saab":
-                imagenVehiculo.image = UIImage(named:"Saab2")
-                logoVehiculo.image = UIImage(named:"saab0")
-                break
-            case "furgoneta":
-                imagenVehiculo.image = UIImage(named:"furgonetaChevrolet2")
-                logoVehiculo.image = UIImage(named:"furgonetaChevrolet0")
-                break
-            case "bus":
-                imagenVehiculo.image = UIImage(named:"bus2")
-                logoVehiculo.image = UIImage(named:"bus0")
-                break
-            default:
-                imagenVehiculo.image = UIImage(named:"vehiculoDesconocido")
-                logoVehiculo.image = UIImage(named:"logOut")
-                break
+            print("Ha ocurrido un error al añadir el experimento, \(error), \(error.userInfo)")
         }
     }
     
