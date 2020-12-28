@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Foundation
 
 class ExperimentoTableViewController: UITableViewController {
     
@@ -142,7 +143,28 @@ class ExperimentoTableViewController: UITableViewController {
             cell.labelExperimento.text = "Experimento 1"
             cell.labelNombre.text = person.value(forKeyPath: "clase") as? String
             //cell.labelFecha.text = person.value(forKeyPath: "clase") as? String
-            cell.labelFecha.text = "09/12/2020"
+            
+            //FECHA
+            let date:Date = person.value(forKeyPath: "fecha") as! Date
+            
+            //let date = Date()
+            
+            // Create Date Formatter
+            let dateFormatter = DateFormatter()
+            
+            // Set Date Format
+            dateFormatter.dateFormat = "dd/MM/YY"
+            
+            // Convert Date to String
+            
+            cell.labelFecha.text = dateFormatter.string(from: date)
+            
+            //NUMEROS
+            let compacidad:Int = person.value(forKeyPath: "compacidad") as! Int
+            //cell.labelFecha.text = String(compacidad)
+
+            
+            
             cell.imageExperimento.image = UIImage(named:"opel1")
             
             cell.accessoryType = .disclosureIndicator

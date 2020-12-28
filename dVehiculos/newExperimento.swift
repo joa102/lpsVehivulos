@@ -11,9 +11,26 @@ import CoreData
 
 class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "guardarExperimento" {
+                guardar(clase: clase, num1: num1, num2: num2, num3: num3, num4: num4, num5: num5, num6: num6, num7: num7, num8: num8, num9: num9, num10: num10, num11: num11, num12: num12, num13: num13, num14: num14, num15: num15)
+            }
+    }
+    
+    
+    //Variables
+    var vehiculos:[NSManagedObject] = []
+    var valornumeros:[[String]] = [[String]]()
+    var v1 :String = "0"
+    var v2 :String = "0"
+    var v3 :String = "0"
+    var valor: String = "000"
+    var clase: String = "Desconocido"
+    var num1 = 0, num2 = 0, num3 = 0 , num4 = 0, num5 = 0,
+    num6 = 0, num7 = 0, num8 = 0 , num9 = 0, num10 = 0,
+    num11 = 0, num12 = 0, num13 = 0 , num14 = 0, num15 = 0;
     
     //Conexiones
-    
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
     @IBOutlet weak var btn3: UIButton!
@@ -156,20 +173,11 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func saveVehiculo(_ sender: Any) {
-        guardar(clase: clase, num1: num1, num2: num2, num3: num3, num4: num4, num5: num5, num6: num6, num7: num7, num8: num8, num9: num9, num10: num10, num11: num11, num12: num12, num13: num13, num14: num14, num15: num15)
+        
+        
     }
     
-    //Variables
-    var vehiculos:[NSManagedObject] = []
-    var valornumeros:[[String]] = [[String]]()
-    var v1 :String = "0"
-    var v2 :String = "0"
-    var v3 :String = "0"
-    var valor: String = "000"
-    var clase: String = "Desconocido"
-    var num1 = 0, num2 = 0, num3 = 0 , num4 = 0, num5 = 0,
-        num6 = 0, num7 = 0, num8 = 0 , num9 = 0, num10 = 0,
-        num11 = 0, num12 = 0, num13 = 0 , num14 = 0, num15 = 0;
+    
     
     
     //Constructor inicial
@@ -209,6 +217,8 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         do {
             try managedContext.save()
             vehiculos.append(vehiculo)
+            
+
         } catch let error as NSError {
             print("Ha ocurrido un error \(error), \(error.userInfo)")
         }

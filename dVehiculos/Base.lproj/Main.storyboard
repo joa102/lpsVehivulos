@@ -500,7 +500,7 @@
                             <color key="tintColor" red="0.080589554494805093" green="1" blue="0.33058830444426135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="saveVehiculo:" destination="BYZ-38-t0r" id="gZL-Tz-sPd"/>
-                                <segue destination="tHb-0V-bbx" kind="modal" id="T1r-fc-42S"/>
+                                <segue destination="tHb-0V-bbx" kind="modal" identifier="guardarExperimento" id="T1r-fc-42S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1434,9 +1434,9 @@
         <image name="footerUAL" width="1026" height="695"/>
         <image name="furgoneta2D" width="600" height="600"/>
         <image name="logOut" width="112" height="112"/>
-        <image name="logoCocheDesconocido" width="360" height="360"/>
-        <image name="logoOpel" width="300" height="300"/>
-        <image name="logoSaab" width="300" height="300"/>
+        <image name="logoCocheDesconocido" width="25920" height="25920"/>
+        <image name="logoOpel" width="225" height="225"/>
+        <image name="logoSaab" width="225" height="225"/>
         <image name="logoVehiculo" width="1026" height="695"/>
         <image name="opel0" width="549" height="431"/>
         <image name="opel2" width="600" height="600"/>
