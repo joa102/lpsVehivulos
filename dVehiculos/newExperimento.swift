@@ -138,6 +138,39 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 guardar(clase: clase, num1: num1, num2: num2, num3: num3, num4: num4, num5: num5, num6: num6, num7: num7, num8: num8, num9: num9, num10: num10, num11: num11, num12: num12, num13: num13, num14: num14, num15: num15)
             }
     }
+    @IBAction func informacionVehiculos(_ sender: Any) {
+        var mensajeVehiculo = ""
+        switch (self.clase) {
+        case "Opel Manta 400":
+            mensajeVehiculo = "El Opel Manta 400 es un automóvil deportivo de tracción trasera fabricado por Opel como subsidiaria de General Motors (GM) desde 1970 hasta 1988. \nSe trata de un cupé deportivo derivado del Opel Ascona, con el cual se pensó competir contra el Ford Capri. Fue el sucesor del Opel GT de primera generación, tuvo tres generaciones y fue reemplazado por el Opel Calibra en 1988."
+            break
+        case "Saab 900":
+            mensajeVehiculo = "El Saab 900 es un automóvil de tamaño medio que fue producido por Saab desde 1978 hasta 1998 en dos generaciones. La primera generación de 1978 a 1994 se conoce como la `clásica` y la generación de 1994 a 1998 se conoce como la `nueva generación`. \nEl Saab 900 `clásico` se basó en el chasis del Saab 99, aunque con una parte delantera más larga para cumplir con las normas de los EE.UU. sobre choques frontales. El 900 se fabricó en configuraciones de sedán de 2 y 4 puertas y de hatchback de 3 y 5 puertas y, a partir de 1986, como modelo cabriolet (convertible). Había carburadores de uno y dos centímetros, con inyección de combustible y turbocompresor, incluyendo tanto el Turbo de Presión Completa (FPT), como, en los modelos europeos de principios de los 90, Turbos de Baja Presión (LPT)."
+            break
+        case "Furgoneta":
+            mensajeVehiculo = "La Chevrolet Van es una furgoneta realizada por General Motors para Chevrolet. El término `Chevrolet Van` también se refiere a toda la serie de camionetas vendidas por Chevrolet. \nLa primera camioneta fue lanzada en 1961 en la plataforma de Corvair, y la última camioneta Chevrolet en la producción es la Chevrolet Express. Fue fabricada entre 1964 y 1996."
+            break
+        case "Autobus":
+            mensajeVehiculo = "Mientras que los autobuses de dos pisos para cubrir largas distancias están extendidos por todo el mundo, los usados para transporte público en ciudades son menos comunes. Son bastantes populares en algunas ciudades europeas y en algunas partes de Asia."
+            break
+        default:
+            mensajeVehiculo = "No hay ninguna información. Todavia no se ha seleccionado ningun vehiculo"
+            
+        }
+        //Creacion de la alerta
+        let alerta = UIAlertController(title: self.clase,
+                                       message: mensajeVehiculo,
+                                       preferredStyle: UIAlertController.Style.actionSheet)
+        
+        //Cerrar
+        let cerrar = UIAlertAction(title :"Cerrar",
+                                   style: UIAlertAction.Style.destructive) { _ in
+                                    alerta.dismiss(animated: true, completion: nil)
+        }
+        alerta.addAction(cerrar)
+        
+        self.present(alerta, animated: false, completion: nil)
+    }
     
     // Seleccionar tipo de Vehiculo
     @IBAction func seleccionarClase(_ sender: Any) {
@@ -148,9 +181,9 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                                        preferredStyle: UIAlertController.Style.actionSheet)
         
         //Tipo opel
-        let opel = UIAlertAction(title :"Opel 4000",
+        let opel = UIAlertAction(title :"Opel Manta 400",
                                  style: UIAlertAction.Style.default) { _ in
-                                    self.clase = "Opel 4000"
+                                    self.clase = "Opel Manta 400"
                                     self.imagenVehiculo.image = UIImage(named:"Opel3D")
                                     self.logoVehiculo.image = UIImage(named:"logoOpel")
                                     alerta.dismiss(animated: true, completion: nil)
