@@ -79,4 +79,8 @@ class IniciarSesionViewController: UIViewController {
         }
     }
     
+    //Control de informacion
+    @IBAction func unwrapInformacion(_ send: UIStoryboardSegue){
+    }
+    
 }
