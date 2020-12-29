@@ -362,15 +362,23 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         if(claseOpel() == maximo){
             self.clase = "Opel Manta 400"
+            self.imagenVehiculo.image = UIImage(named:"Opel3D")
+            self.logoVehiculo.image = UIImage(named:"logoOpel")
         }
         if(claseFurgoneta() == maximo){
             self.clase = "Furgoneta"
+            self.imagenVehiculo.image = UIImage(named:"furgoneta3D")
+            self.logoVehiculo.image = UIImage(named:"logoChevrolet")
         }
         if(claseSaab() == maximo){
             self.clase = "Saab 900"
+            self.imagenVehiculo.image = UIImage(named:"Saab3D")
+            self.logoVehiculo.image = UIImage(named:"logoSaab")
         }
         if(claseAutobus() == maximo){
             self.clase = "Autobus"
+            self.imagenVehiculo.image = UIImage(named:"Autobus3D")
+            self.logoVehiculo.image = UIImage(named:"logoBus")
         }
         print(self.clase)
     }
