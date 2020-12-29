@@ -35,4 +35,8 @@ class InicioViewController: UIViewController {
         }
         
     }
+    
+    // Volver a inicio
+    @IBAction func unwrapSegueNuevoExperimento(_ send: UIStoryboardSegue){
+    }
 }

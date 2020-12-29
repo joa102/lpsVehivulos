@@ -83,4 +83,8 @@ class IniciarSesionViewController: UIViewController {
     @IBAction func unwrapInformacion(_ send: UIStoryboardSegue){
     }
     
+    // Cerrar sesion
+    @IBAction func unwrapCerrarSesion(_ send: UIStoryboardSegue){
+    }
+    
 }

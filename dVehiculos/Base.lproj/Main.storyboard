@@ -492,7 +492,7 @@
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="reply" id="TSI-Sq-ZIi">
                             <color key="tintColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <segue destination="pu3-Jx-aAv" kind="unwind" unwindAction="unwrapSegueNuevoExperimento:" id="zgc-Cv-sCp"/>
+                                <segue destination="pu3-Jx-aAv" kind="unwind" unwindAction="unwrapSegueNuevoExperimento:" id="r85-jN-RWb"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Guardar" id="MhR-Gt-XCB">
@@ -586,17 +586,14 @@
                                         <rect key="frame" x="35" y="30" width="52" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logOut" id="8Td-8C-y4d">
-                                        <rect key="frame" x="347" y="41" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QB4-Ku-FaS">
+                                        <rect key="frame" x="340" y="40" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                        </accessibility>
-                                        <gestureRecognizers/>
+                                        <state key="normal" title="cerrarSesion" image="logOut"/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="gac-Tq-L6H" appends="YES" id="Cn0-4J-c2N"/>
+                                            <segue destination="0FK-hL-Ymk" kind="unwind" unwindAction="unwrapCerrarSesion:" id="owa-I0-XKk"/>
                                         </connections>
-                                    </imageView>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -659,6 +656,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4e-Nk-sPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0FK-hL-Ymk" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="XQd-ig-QzX">
                     <connections>
                         <segue destination="TVb-9G-mSq" kind="modal" id="2y1-xG-IR9"/>
@@ -669,13 +667,8 @@
                         <segue destination="tHb-0V-bbx" kind="modal" id="R8a-cJ-gof"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="gac-Tq-L6H">
-                    <connections>
-                        <segue destination="FBo-Ai-SwI" kind="modal" identifier="cerrarSesion" id="QXB-pp-dTX"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="80" y="-925"/>
+            <point key="canvasLocation" x="79.710144927536234" y="-925.44642857142856"/>
         </scene>
         <!--Informacion-->
         <scene sceneID="d8p-JI-bya">
@@ -1551,6 +1544,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R8a-cJ-gof"/>
-        <segue reference="QXB-pp-dTX"/>
     </inferredMetricsTieBreakers>
 </document>
