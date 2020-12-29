@@ -15,6 +15,8 @@ class RegistrarseViewController: UIViewController {
     @IBOutlet weak var emailUsuario: UITextField!
     @IBOutlet weak var contrasenaUsuario: UITextField!
     @IBOutlet weak var recontrasenaUsuario: UITextField!
+    @IBOutlet weak var selectorImagen: UISegmentedControl!
+    @IBOutlet weak var imagenUsuario: UIImageView!
     
     // VARIABLES
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -22,6 +24,39 @@ class RegistrarseViewController: UIViewController {
     // CONSTRUCTOR INICIAL
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagenUsuario.image = UIImage(named: "user0")
+    }
+    
+    // SELECCIONAR IMAGEN
+    @IBAction func seleccionarImagen(_ sender: Any) {
+        switch (selectorImagen.selectedSegmentIndex) {
+        case 1:
+            imagenUsuario.image = UIImage(named: "user1")
+            break
+        case 2:
+            imagenUsuario.image = UIImage(named: "user2")
+            break
+        case 3:
+            imagenUsuario.image = UIImage(named: "user3")
+            break
+        case 4:
+            imagenUsuario.image = UIImage(named: "user4")
+            break
+        case 5:
+            imagenUsuario.image = UIImage(named: "user5")
+            break
+        case 6:
+            imagenUsuario.image = UIImage(named: "user6")
+            break
+        case 7:
+            imagenUsuario.image = UIImage(named: "user7")
+            break
+        case 8:
+            imagenUsuario.image = UIImage(named: "user8")
+            break
+        default:
+            imagenUsuario.image = UIImage(named: "user0")
+        }
     }
     
     // REGISTRARSE
@@ -38,7 +73,7 @@ class RegistrarseViewController: UIViewController {
             newUsuario.nombre = nombre
             newUsuario.email = email
             newUsuario.password = contrasena
-            newUsuario.imagen_perfil = (UIImage(named: "userImg")?.pngData()! as NSData?)
+            newUsuario.imagen_perfil = (imagenUsuario.image?.pngData()! as NSData?)
             
             do{
                 try self.context.save()
