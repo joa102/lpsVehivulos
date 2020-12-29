@@ -31,6 +31,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         selectorNumeros()
+        calcularClase()
     }
     // CONEXIONES
     
@@ -60,76 +61,91 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func Boton1(_ sender: Any) {
         num1 = Int(valor) ?? 0;
         btn1.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton2(_ sender: Any) {
         num2 = Int(valor) ?? 0;
         btn2.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton3(_ sender: Any) {
         num3 = Int(valor) ?? 0;
         btn3.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton4(_ sender: Any) {
         num4 = Int(valor) ?? 0;
         btn4.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton5(_ sender: Any) {
         num5 = Int(valor) ?? 0;
         btn5.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton6(_ sender: Any) {
         num6 = Int(valor) ?? 0;
         btn6.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton7(_ sender: Any) {
         num7 = Int(valor) ?? 0;
         btn7.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton8(_ sender: Any) {
         num8 = Int(valor) ?? 0;
         btn8.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton9(_ sender: Any) {
         num9 = Int(valor) ?? 0;
         btn9.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton10(_ sender: Any) {
         num10 = Int(valor) ?? 0;
         btn10.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton11(_ sender: Any) {
         num11 = Int(valor) ?? 0;
         btn11.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton12(_ sender: Any) {
         num12 = Int(valor) ?? 0;
         btn12.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton13(_ sender: Any) {
         num13 = Int(valor) ?? 0;
         btn13.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton14(_ sender: Any) {
         num14 = Int(valor) ?? 0;
         btn14.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     @IBAction func Boton15(_ sender: Any) {
         num15 = Int(valor) ?? 0;
         btn15.setTitle(valor, for: .normal);
+        calcularClase()
     }
     
     // Guardar al historial de experimentos
@@ -247,18 +263,18 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         vehiculo.setValue(num1, forKeyPath: "compacidad")
         vehiculo.setValue(num2, forKeyPath: "circularidad")
         vehiculo.setValue(num3, forKeyPath: "distanciaCircularidad")
-        vehiculo.setValue(num4, forKeyPath: "relacionAspectoEje")
-        vehiculo.setValue(num5, forKeyPath: "relacionRadio")
+        vehiculo.setValue(num4, forKeyPath: "relacionRadio")
+        vehiculo.setValue(num5, forKeyPath: "relacionAspectoEje")
         vehiculo.setValue(num6, forKeyPath: "aspectoLongitudMaxima")
         vehiculo.setValue(num7, forKeyPath: "elongacion")
         vehiculo.setValue(num8, forKeyPath: "rectangularidadEje")
-        vehiculo.setValue(num9, forKeyPath: "variacionEscalonadaEjeMayor")
-        vehiculo.setValue(num10, forKeyPath: "variacionescalonadaEjeMenor")
-        vehiculo.setValue(num11, forKeyPath: "longitudMaximaRectangularidad")
-        vehiculo.setValue(num12, forKeyPath: "radioZonasVacias")
-        vehiculo.setValue(num13, forKeyPath: "oblicuidadEjeMayor")
+        vehiculo.setValue(num9, forKeyPath: "longitudMaximaRectangularidad")
+        vehiculo.setValue(num10, forKeyPath: "variacionEscalonadaEjeMayor")
+        vehiculo.setValue(num11, forKeyPath: "variacionescalonadaEjeMenor")
+        vehiculo.setValue(num12, forKeyPath: "oblicuidadEjeMayor")
+        vehiculo.setValue(num13, forKeyPath: "curtosisEjeMayor")
         vehiculo.setValue(num14, forKeyPath: "curtosisEjeMenor")
-        vehiculo.setValue(num15, forKeyPath: "curtosisEjeMayor")
+        vehiculo.setValue(num15, forKeyPath: "radioZonasVacias")
         vehiculo.setValue(Date(), forKeyPath: "fecha")
         
         do {
@@ -311,6 +327,52 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             v3 = valornumeros[component][row] as String
         }
         actualizarValor()
+    }
+    
+    //ALGORITMO AUTOMATICO
+    
+     
+     // CLASE OPEL
+     func claseOpel() -> Double{
+     return 89.64 + (Double(num1) * -0.05) + (Double(num2) * 0.52) + (Double(num3) * 0.04) + (Double(num4) * 0.11) + (Double(num5) * -0.69) + (Double(num6) * -0.46) + (Double(num8) * 0.14) + (Double(num9) * -0.26) + (Double(num10) * -0.03) + (Double(num11) * 0) + (Double(num12) * -0.23) + (Double(num13) * 0.01) + (Double(num14) * -0.14) + (Double(num15) * -0.01)
+     }
+     
+     // CLASE FURGONETA
+     func claseFurgoneta() -> Double{
+     return -108.5 + (Double(num1) * 0.35) + (Double(num2) * -0.57) + (Double(num3) * 0.25) + (Double(num4) * -0.13) + (Double(num5) * 0.07) + (Double(num6) * 0.14) + (Double(num7) * 0.35) + (Double(num8) * -1.53) + (Double(num9) * 0.53) + (Double(num10) * -0.01) + (Double(num11) * -0.03) + (Double(num12) * 0.2) + (Double(num13) * -0.07) + (Double(num14) * -0.18) + (Double(num15) * 0.33)
+     }
+     
+     // CLASE SAAB
+     func claseSaab() -> Double{
+     return 106.91 + (Double(num1) * 0.15) + (Double(num2) * -0.08) + (Double(num3) * -0.04) + (Double(num4) * 0.09) + (Double(num5) * -0.62) + (Double(num6) * -0.68) + (Double(num7) * -0.11) + (Double(num8) * 0.61) + (Double(num9) * -0.05) + (Double(num11) * -0) + (Double(num12) * -0.33) + (Double(num13) * 0.04) + (Double(num14) * -0.12) + (Double(num15) * -0.2)
+     }
+     
+     // CLASE AUTOBUS
+    func claseAutobus() -> Double{
+        return -3.8 + (Double(num1) * -0.04) + (Double(num2) * 0.04) + (Double(num3) * 0.08) + (Double(num4) * -0.21) + (Double(num5) * 0.37) + (Double(num6) * -0.15) + (Double(num7) * -1.22) + (Double(num8) * -1.14) + (Double(num9) * 0.16) + (Double(num10) * 0.07) + (Double(num11) * -0.02) + (Double(num12) * 0.12) + (Double(num13) * 0.05) + (Double(num14) * 0.55) + (Double(num15) * -0.22)
+    }
+    
+    func calcularClase(){
+        var resultados = [claseOpel(), claseFurgoneta(), claseSaab() , claseAutobus()]
+        var maximo = resultados[0]
+        for i in resultados{
+            if (maximo < i){
+                maximo = i
+            }
+        }
+        if(claseOpel() == maximo){
+            self.clase = "Opel Manta 400"
+        }
+        if(claseFurgoneta() == maximo){
+            self.clase = "Furgoneta"
+        }
+        if(claseSaab() == maximo){
+            self.clase = "Saab 900"
+        }
+        if(claseAutobus() == maximo){
+            self.clase = "Autobus"
+        }
+        print(self.clase)
     }
 
 }
