@@ -16,7 +16,7 @@
 		2969B1F62580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969B1F22580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift */; };
 		29D8D7362587A68600C30915 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D8D7352587A68500C30915 /* IniciarSesionViewController.swift */; };
 		29D8D7382587A6A600C30915 /* RegistrarseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D8D7372587A6A600C30915 /* RegistrarseViewController.swift */; };
-		2D0201D72581478F007BE488 /* ExperimentoTableViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0201D62581478F007BE488 /* ExperimentoTableViewControllerCollectionViewController.swift */; };
+		2D0201D72581478F007BE488 /* ExperimentosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0201D62581478F007BE488 /* ExperimentosTableViewController.swift */; };
 		2D0201D9258147D4007BE488 /* ExperimentoTableViewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0201D8258147D4007BE488 /* ExperimentoTableViewCellCollectionViewCell.swift */; };
 		2D2E5DCF256D98D400B9F7BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */; };
 		2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD0256D98D400B9F7BB /* ViewController.swift */; };
@@ -24,6 +24,7 @@
 		2D2E5DD7256D98D400B9F7BB /* dVehiculos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD5256D98D400B9F7BB /* dVehiculos.xcdatamodeld */; };
 		2D2E5DD9256D98D600B9F7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E5DD8256D98D600B9F7BB /* Assets.xcassets */; };
 		2D2E5DDC256D98D600B9F7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2E5DDA256D98D600B9F7BB /* LaunchScreen.storyboard */; };
+		2D33803625A26C3D008D2055 /* DetalleExperimentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D33803525A26C3D008D2055 /* DetalleExperimentoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,7 @@
 		2969B1F22580F9BF00B09F7C /* Vehiculo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehiculo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D8D7352587A68500C30915 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		29D8D7372587A6A600C30915 /* RegistrarseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarseViewController.swift; sourceTree = "<group>"; };
-		2D0201D62581478F007BE488 /* ExperimentoTableViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentoTableViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		2D0201D62581478F007BE488 /* ExperimentosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentosTableViewController.swift; sourceTree = "<group>"; };
 		2D0201D8258147D4007BE488 /* ExperimentoTableViewCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentoTableViewCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D2E5DCB256D98D400B9F7BB /* dVehiculos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dVehiculos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		2D2E5DD8256D98D600B9F7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D2E5DDB256D98D600B9F7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D2E5DDD256D98D600B9F7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D33803525A26C3D008D2055 /* DetalleExperimentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleExperimentoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 				153019E8256E6F8A0043A1EA /* newExperimento.swift */,
 				2D2E5DCE256D98D400B9F7BB /* AppDelegate.swift */,
 				2D2E5DD0256D98D400B9F7BB /* ViewController.swift */,
-				2D0201D62581478F007BE488 /* ExperimentoTableViewControllerCollectionViewController.swift */,
+				2D0201D62581478F007BE488 /* ExperimentosTableViewController.swift */,
+				2D33803525A26C3D008D2055 /* DetalleExperimentoViewController.swift */,
 				2D2E5DD2256D98D400B9F7BB /* Main.storyboard */,
 				2D0201D8258147D4007BE488 /* ExperimentoTableViewCellCollectionViewCell.swift */,
 				2D2E5DD8256D98D600B9F7BB /* Assets.xcassets */,
@@ -178,8 +181,9 @@
 				29D8D7382587A6A600C30915 /* RegistrarseViewController.swift in Sources */,
 				2969B1F42580F9BF00B09F7C /* Persona+CoreDataProperties.swift in Sources */,
 				2D0201D9258147D4007BE488 /* ExperimentoTableViewCellCollectionViewCell.swift in Sources */,
+				2D33803625A26C3D008D2055 /* DetalleExperimentoViewController.swift in Sources */,
 				2969B1F52580F9BF00B09F7C /* Vehiculo+CoreDataClass.swift in Sources */,
-				2D0201D72581478F007BE488 /* ExperimentoTableViewControllerCollectionViewController.swift in Sources */,
+				2D0201D72581478F007BE488 /* ExperimentosTableViewController.swift in Sources */,
 				29D8D7362587A68600C30915 /* IniciarSesionViewController.swift in Sources */,
 				2969B1F32580F9BF00B09F7C /* Persona+CoreDataClass.swift in Sources */,
 				2D2E5DD1256D98D400B9F7BB /* ViewController.swift in Sources */,
