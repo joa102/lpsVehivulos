@@ -8,12 +8,13 @@
 
 import UIKit
 import CoreData
-//import Foundation
 
 class DetalleExperimentoTableViewController: UIViewController {
     
+    // VARIABLES
     var vehiculoDetalle:NSManagedObject!
     
+    // CONEXIONES
     @IBOutlet weak var vehiculoImagen: UIImageView!
     @IBOutlet weak var logoImagen: UIImageView!
     @IBOutlet weak var claseLabel: UILabel!
@@ -33,27 +34,28 @@ class DetalleExperimentoTableViewController: UIViewController {
     @IBOutlet weak var curtosisMaxLabel: UILabel!
     @IBOutlet weak var curtosisMinLabel: UILabel!
     
+    //CONTRCUTOR INICIAL
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = "Detalle"
-        
+
+        //Cargamos variables
         claseLabel?.text = vehiculoDetalle.value(forKeyPath: "clase") as? String
         compacidadLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "compacidad") as? Int ?? 0) "
         circularidadLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "circularidad") as? Int ?? 0) "
         elongacionLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "elongacion") as? Int ?? 0) "
-        aspectLongMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "aspectoLongitudMaxima") as! Int) "
-        rectEjeLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "rectangularidadEje") as! Int) "
-        distCircLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "distanciaCircularidad") as! Int) "
-        longMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "longitudMaximaRectangularidad") as! Int) "
-        relAspectLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionAspectoEje") as! Int) "
-        relRadioLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionRadio") as! Int) "
-        varEscMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "variacionEscalonadaEjeMayor") as! Int) "
-        varEscMinLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "variacionescalonadaEjeMenor") as! Int) "
-        oblicuidadMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "oblicuidadEjeMayor") as! Int) "
-        radZonVacLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "radioZonasVacias") as! Int) "
-        curtosisMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "curtosisEjeMayor") as! Int) "
-        curtosisMinLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "curtosisEjeMenor") as! Int) "
+        aspectLongMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "aspectoLongitudMaxima") as? Int ?? 0) "
+        rectEjeLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "rectangularidadEje") as? Int ?? 0) "
+        distCircLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "distanciaCircularidad") as? Int ?? 0) "
+        longMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "longitudMaximaRectangularidad") as? Int ?? 0) "
+        relAspectLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionAspectoEje") as? Int ?? 0) "
+        relRadioLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionRadio") as? Int ?? 0) "
+        varEscMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "variacionEscalonadaEjeMayor") as? Int ?? 0) "
+        varEscMinLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "variacionescalonadaEjeMenor") as? Int ?? 0) "
+        oblicuidadMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "oblicuidadEjeMayor") as? Int ?? 0) "
+        radZonVacLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "radioZonasVacias") as? Int ?? 0) "
+        curtosisMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "curtosisEjeMayor") as? Int ?? 0) "
+        curtosisMinLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "curtosisEjeMenor") as? Int ?? 0) "
         
         if(self.claseLabel.text == "Opel Manta 400") {
             vehiculoImagen.image = UIImage(named:"Opel3D")
@@ -73,6 +75,7 @@ class DetalleExperimentoTableViewController: UIViewController {
         }
     }
     
+    // Mensaje de información del vehiculo
     @IBAction func informacionVehiculos(_ sender: Any) {
         var mensajeVehiculo = ""
         switch (self.claseLabel.text) {

@@ -10,20 +10,20 @@ import UIKit
 
 class ExperimentoTableViewCell: UITableViewCell {
     
+    // VARIABLES
     @IBOutlet weak var imageExperimento: UIImageView!
     @IBOutlet weak var labelExperimento: UILabel!
     @IBOutlet weak var labelNombre: UILabel!
     @IBOutlet weak var labelFecha: UILabel!
     
+    // CONSTRUCTOR INICIAL
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
+    //CONTROLADOR DE SELECCION
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
 }
