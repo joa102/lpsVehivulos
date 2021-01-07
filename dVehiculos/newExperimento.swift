@@ -258,7 +258,6 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let entity = NSEntityDescription.entity(forEntityName: "Vehiculo", in: managedContext)!
         let vehiculo = NSManagedObject(entity: entity, insertInto: managedContext)
         
-        
         vehiculo.setValue(clase, forKeyPath: "clase")
         vehiculo.setValue(num1, forKeyPath: "compacidad")
         vehiculo.setValue(num2, forKeyPath: "circularidad")
