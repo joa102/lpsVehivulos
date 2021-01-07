@@ -96,16 +96,16 @@ class ExperimentoTableViewController: UITableViewController {
         cell.imageExperimento.image = UIImage(named: imagenVehiculo!)
                        
         if(vehiculo.value(forKeyPath: "clase") as? String == "Opel Manta 400") {
-            cell.imageExperimento.image = UIImage(named:"Opel2D")
+            cell.imageExperimento.image = UIImage(named:"Opel3D")
         }
         if(vehiculo.value(forKeyPath: "clase") as? String == "Furgoneta") {
-            cell.imageExperimento.image = UIImage(named:"furgoneta2D")
+            cell.imageExperimento.image = UIImage(named:"furgoneta3D")
         }
         if(vehiculo.value(forKeyPath: "clase") as? String == "Saab 900") {
-            cell.imageExperimento.image = UIImage(named:"Saab2D")
+            cell.imageExperimento.image = UIImage(named:"Saab3D")
         }
         if(vehiculo.value(forKeyPath: "clase") as? String == "Autobus") {
-            cell.imageExperimento.image = UIImage(named:"Autobus2D")
+            cell.imageExperimento.image = UIImage(named:"Autobus3D")
         }
             
         cell.accessoryType = .disclosureIndicator
