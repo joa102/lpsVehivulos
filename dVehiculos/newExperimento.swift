@@ -267,7 +267,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         vehiculo.setValue(num5, forKeyPath: "relacionAspectoEje")
         vehiculo.setValue(num6, forKeyPath: "aspectoLongitudMaxima")
         vehiculo.setValue(num7, forKeyPath: "elongacion")
-        vehiculo.setValue(num8, forKeyPath: "rectangularidadEje")
+        vehiculo.setValue(num8, forKeyPath: "relacionDispersion")
         vehiculo.setValue(num9, forKeyPath: "longitudMaximaRectangularidad")
         vehiculo.setValue(num10, forKeyPath: "variacionEscalonadaEjeMayor")
         vehiculo.setValue(num11, forKeyPath: "variacionescalonadaEjeMenor")
@@ -334,22 +334,164 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
      
      // CLASE OPEL
      func claseOpel() -> Double{
-     return 89.64 + (Double(num1) * -0.05) + (Double(num2) * 0.52) + (Double(num3) * 0.04) + (Double(num4) * 0.11) + (Double(num5) * -0.69) + (Double(num6) * -0.46) + (Double(num8) * 0.14) + (Double(num9) * -0.26) + (Double(num10) * -0.03) + (Double(num11) * 0) + (Double(num12) * -0.23) + (Double(num13) * 0.01) + (Double(num14) * -0.14) + (Double(num15) * -0.01)
+        var resultado:Double = 0.0
+        if (Double(num7) <= 41.0){
+            resultado = 88.16 +
+                Double(num1) * -0.07 +
+                Double(num2) * -0 +
+                Double(num3) * -0.05 +
+                Double(num4) * 0.08 +
+                Double(num5) * -0.45 +
+                Double(num6) * 0.04 +
+                Double(num7) * -0.01 +
+                Double(num9) * -0 +
+                Double(num10) * -0 +
+                Double(num11) * 0.01 +
+                Double(num12) * -0.39 +
+                Double(num13) * 0.08 +
+                Double(num14) * 0.36 +
+                Double(num15) * -0.55 ;
+        }
+        else {
+            resultado = 88.16 +
+                90.24 +
+                Double(num1) * -0.07 +
+                Double(num2) * 0.53 +
+                Double(num3) * 0.03 +
+                Double(num4) * 0.11 +
+                Double(num5) * -0.67 +
+                Double(num6) * -0.47 +
+                Double(num7) * 0.02 +
+                Double(num9) * -0.27 +
+                Double(num10) * -0.02 +
+                Double(num11) * 0    +
+                Double(num12) * -0.23 +
+                Double(num13) * 0.02 +
+                Double(num14) * -0.13 +
+                Double(num15) * -0.01;
+        }
+        return resultado
      }
      
      // CLASE FURGONETA
      func claseFurgoneta() -> Double{
-     return -108.5 + (Double(num1) * 0.35) + (Double(num2) * -0.57) + (Double(num3) * 0.25) + (Double(num4) * -0.13) + (Double(num5) * 0.07) + (Double(num6) * 0.14) + (Double(num7) * 0.35) + (Double(num8) * -1.53) + (Double(num9) * 0.53) + (Double(num10) * -0.01) + (Double(num11) * -0.03) + (Double(num12) * 0.2) + (Double(num13) * -0.07) + (Double(num14) * -0.18) + (Double(num15) * 0.33)
-     }
+        var resultado:Double = 0.0
+        if (Double(num7) <= 41.0){
+            resultado = -191.3 +
+                Double(num1) * 0.29 +
+                Double(num2) * -0.5 +
+                Double(num3) * 0.2  +
+                Double(num4) * -0.06 +
+                Double(num5) * 0.01 +
+                Double(num6) * 0.14 +
+                Double(num8) * -0.02 +
+                Double(num7) * 0.21 +
+                Double(num9) * 0.39 +
+                Double(num10) * -0.02 +
+                Double(num11) * -0.04 +
+                Double(num12) * 0.1  +
+                Double(num13) * -0.05 +
+                Double(num14) * -0.01 +
+                Double(num15) * 0.13;
+        }
+        else {
+            resultado = -125.61 +
+                Double(num1) * 0.33 +
+                Double(num2) * -0.5 +
+                Double(num3) * 0.24 +
+                Double(num4) * -0.13 +
+                Double(num5) * 0.07 +
+                Double(num6) * 0.14 +
+                Double(num8) * -0.06 +
+                Double(num7) * 0.34 +
+                Double(num9) * 0.49 +
+                Double(num10) * -0.01 +
+                Double(num11) * -0.04 +
+                Double(num12) * 0.21 +
+                Double(num13) * -0.06 +
+                Double(num14) * -0.12 +
+                Double(num15) * 0.3;
+        }
+        return resultado
+    }
      
      // CLASE SAAB
      func claseSaab() -> Double{
-     return 106.91 + (Double(num1) * 0.15) + (Double(num2) * -0.08) + (Double(num3) * -0.04) + (Double(num4) * 0.09) + (Double(num5) * -0.62) + (Double(num6) * -0.68) + (Double(num7) * -0.11) + (Double(num8) * 0.61) + (Double(num9) * -0.05) + (Double(num11) * -0) + (Double(num12) * -0.33) + (Double(num13) * 0.04) + (Double(num14) * -0.12) + (Double(num15) * -0.2)
-     }
+        var resultado:Double = 0.0
+        if (Double(num7) <= 41.0){
+            resultado = 59.8 +
+                Double(num1) * 0.18 +
+                Double(num2) * -0.01 +
+                Double(num3) * 0.07 +
+                Double(num4) * 0.05 +
+                Double(num5) * -0.31 +
+                Double(num6) * -0.1 +
+                Double(num7) * 0.16 +
+                Double(num9) * -0.04 +
+                Double(num10) * -0.01 +
+                Double(num11) * -0.01 +
+                Double(num12) * -0.14 +
+                Double(num13) * -0.03 +
+                Double(num14) * -0.82 +
+                Double(num15) * 0.53;
+        }
+        else {
+            resultado = 112.7 +
+                Double(num1) * 0.12 +
+                Double(num2) * -0.07 +
+                Double(num3) * -0.04 +
+                Double(num4) * 0.09 +
+                Double(num5) * -0.61 +
+                Double(num6) * -0.67 +
+                Double(num7) * -0.08 +
+                Double(num9) * -0.05 +
+                Double(num11) * 0    +
+                Double(num12) * -0.33 +
+                Double(num13) * 0.04 +
+                Double(num14) * -0.11 +
+                Double(num15) * -0.2 ;
+        }
+        return resultado
+    }
      
      // CLASE AUTOBUS
     func claseAutobus() -> Double{
-        return -3.8 + (Double(num1) * -0.04) + (Double(num2) * 0.04) + (Double(num3) * 0.08) + (Double(num4) * -0.21) + (Double(num5) * 0.37) + (Double(num6) * -0.15) + (Double(num7) * -1.22) + (Double(num8) * -1.14) + (Double(num9) * 0.16) + (Double(num10) * 0.07) + (Double(num11) * -0.02) + (Double(num12) * 0.12) + (Double(num13) * 0.05) + (Double(num14) * 0.55) + (Double(num15) * -0.22)
+        var resultado:Double = 0.0
+        if (Double(num7) <= 41.0){
+            resultado = -407.31 +
+                Double(num1) * 0.59 +
+                Double(num2) * 0.04 +
+                Double(num3) * -0.04 +
+                Double(num4) * -0.25 +
+                Double(num5) * 0.67 +
+                Double(num6) * -5.2 +
+                Double(num7) * -0.65 +
+                Double(num9) * -0.06 +
+                Double(num10) * 0.05 +
+                Double(num11) * 0.01 +
+                Double(num12) * 1.74 +
+                Double(num13) * 0.05 +
+                Double(num14) * 1.72 +
+                Double(num15) * -0.22;
+        }
+        else {
+            resultado = -16.29 +
+                Double(num1) * -0.06 +
+                Double(num2) * 0.04 +
+                Double(num3) * -0.08 +
+                Double(num4) * -0.22 +
+                Double(num5) * 0.37 +
+                Double(num6) * -0.13 +
+                Double(num8) * -0.11 +
+                Double(num7) * -1.11 +
+                Double(num9) * 0.14 +
+                Double(num10) * 0.07 +
+                Double(num12) * 0.12 +
+                Double(num13) * 0.05 +
+                Double(num14) * 0.56 +
+                Double(num15) * -0.23;
+        }
+        return resultado
     }
     
     func calcularClase(){

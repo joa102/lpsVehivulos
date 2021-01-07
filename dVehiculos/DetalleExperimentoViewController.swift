@@ -45,7 +45,7 @@ class DetalleExperimentoTableViewController: UIViewController {
         circularidadLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "circularidad") as? Int ?? 0) "
         elongacionLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "elongacion") as? Int ?? 0) "
         aspectLongMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "aspectoLongitudMaxima") as? Int ?? 0) "
-        rectEjeLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "rectangularidadEje") as? Int ?? 0) "
+        rectEjeLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionDispersion") as? Int ?? 0) "
         distCircLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "distanciaCircularidad") as? Int ?? 0) "
         longMaxLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "longitudMaximaRectangularidad") as? Int ?? 0) "
         relAspectLabel?.text = "\(vehiculoDetalle.value(forKeyPath: "relacionAspectoEje") as? Int ?? 0) "
