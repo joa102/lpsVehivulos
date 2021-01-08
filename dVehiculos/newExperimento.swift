@@ -352,8 +352,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 Double(num15) * -0.55 ;
         }
         else {
-            resultado = 88.16 +
-                90.24 +
+            resultado = 90.24 +
                 Double(num1) * -0.07 +
                 Double(num2) * 0.53 +
                 Double(num3) * 0.03 +
