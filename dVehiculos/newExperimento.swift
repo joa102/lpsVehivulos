@@ -31,7 +31,20 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         selectorNumeros()
-        calcularClase()
+        
+        #if Algortimo
+            selectorClase.isEnabled = false;
+            selectorClase.setTitle(" ", for: .normal)
+            calcularClase()
+            print("Modo algortimo")
+        #endif
+        
+        #if Ambos
+            print("Modo ambos")
+            calcularClase()
+        #endif
+        
+        
     }
     // CONEXIONES
     
@@ -56,6 +69,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var logoVehiculo: UIImageView!
     @IBOutlet weak var imagenVehiculo: UIImageView!
     @IBOutlet weak var numeros: UIPickerView!
+    @IBOutlet weak var selectorClase: UIButton!
     
     // ACCIONES
     @IBAction func Boton1(_ sender: Any) {
@@ -352,8 +366,7 @@ class newExperimento: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 Double(num15) * -0.55 ;
         }
         else {
-            resultado = 88.16 +
-                90.24 +
+            resultado = 90.24 +
                 Double(num1) * -0.07 +
                 Double(num2) * 0.53 +
                 Double(num3) * 0.03 +

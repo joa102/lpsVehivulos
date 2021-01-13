@@ -13,7 +13,7 @@
         <!--Nuevo experimentos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="newExperimento" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="newExperimento" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,6 +524,7 @@
                         <outlet property="imagenVehiculo" destination="QKU-fh-iK7" id="PQ3-fR-lzX"/>
                         <outlet property="logoVehiculo" destination="LD2-sG-hEb" id="Mof-X2-Aah"/>
                         <outlet property="numeros" destination="hW9-RY-yoM" id="xHd-2e-tZH"/>
+                        <outlet property="selectorClase" destination="NMA-Hn-1uX" id="PNK-li-56b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -558,7 +559,7 @@
         <!--Inicio View Controller-->
         <scene sceneID="jFH-bV-dY8">
             <objects>
-                <viewController id="6wK-qy-ne0" customClass="InicioViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6wK-qy-ne0" customClass="InicioViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rlu-uc-vel">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -676,7 +677,7 @@
         <!--Informacion-->
         <scene sceneID="d8p-JI-bya">
             <objects>
-                <viewController id="GOC-lj-FJz" customClass="InformacionViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GOC-lj-FJz" customClass="InformacionViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="65s-yU-gLx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -817,7 +818,7 @@
         <!--Registrarse View Controller-->
         <scene sceneID="REA-RA-FQS">
             <objects>
-                <viewController id="sWy-wo-T1H" customClass="RegistrarseViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sWy-wo-T1H" customClass="RegistrarseViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iUQ-2d-bze">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -984,7 +985,7 @@
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="ZuJ-0U-Cqx">
             <objects>
-                <viewController id="FBo-Ai-SwI" customClass="IniciarSesionViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FBo-Ai-SwI" customClass="IniciarSesionViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBS-en-fyd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1093,13 +1094,13 @@
         <!--Experimento Table View Controller-->
         <scene sceneID="0da-f7-0y7">
             <objects>
-                <tableViewController id="cgU-zh-Tre" userLabel="Experimento Table View Controller" customClass="ExperimentoTableViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cgU-zh-Tre" userLabel="Experimento Table View Controller" customClass="ExperimentoTableViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="P9o-7a-eC6" userLabel="Experimento Table View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Table View Cell Experimentos" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExperimentoTableViewCell" rowHeight="90" id="o7H-ut-knP" userLabel="ExperimentoCell" customClass="ExperimentoTableViewCell" customModule="dVehiculos" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Table View Cell Experimentos" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ExperimentoTableViewCell" rowHeight="90" id="o7H-ut-knP" userLabel="ExperimentoCell" customClass="ExperimentoTableViewCell" customModule="Algortimo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="contentViewExperimento" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o7H-ut-knP" id="sGk-8z-4Ir">
@@ -1193,7 +1194,7 @@
         <!--Detalle-->
         <scene sceneID="KRr-9P-hIR">
             <objects>
-                <viewController id="ifg-eA-DXH" customClass="DetalleExperimentoTableViewController" customModule="dVehiculos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ifg-eA-DXH" customClass="DetalleExperimentoTableViewController" customModule="Algortimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="47n-lA-aHO" userLabel="DetalleView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
